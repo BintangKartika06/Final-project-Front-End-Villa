@@ -6,125 +6,113 @@
     <title>ABBA VILLA | Luxury Retreat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <nav class="navbar fixed-top transition-nav" id="mainNav">
-        <div class="container d-flex align-items-center justify-content-between position-relative">
+        <div class="container">
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            <a class="navbar-brand mx-auto" href="#" onclick="navigateTo('home')">
-                <img src="Media/logowhite.png" alt="ABBA VILLA Logo" class="brand-logo">
+
+            <a class="navbar-brand" href="#" onclick="navigateTo('home'); return false;">
+                <img src="Media/logowhite.png" alt="ABBA VILLA" class="brand-logo">
             </a>
+
             <div class="nav-right">
-                <button class="btn btn-book-now" onclick="navigateTo('book')">BOOK NOW</button>
+                <button class="btn btn-book-now" onclick="navigateTo('villas')">BOOK NOW</button>
             </div>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-center py-4">
-                    <li class="nav-item"><a class="nav-link" href="#" data-page="discover">Discover</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-page="rooms">Facility</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-page="experiences">Experiences</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-page="book">Promo</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('discover'); return false;">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('facility'); return false;">Facility</a>
+                    </li> <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('gallery'); return false;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('reviews'); return false;">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('check-booking'); return false;">Check Booking</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main id="app-content">
-        <header class="hero-section" style="background-image: url('Media/image.jpg');">
-            <div class="hero-overlay d-flex align-items-center justify-content-center">
-                <div class="text-center text-white">
-                    <h1 class="serif-text display-1">Reserve Your Luxury Retreat Today</h1>
-                    <p class="mt-3">Feel the calm and cool air in Bali with ABBA</p>
-                </div>
-            </div>
-        </header>
-        <section class="container py-5 mt-5">
-            <div class="row align-items-center">
-                <div class="col-md-7 border-end pe-md-5">
-                    <h2 class="serif-text">The Art of Slow Living at Villa ABBA.</h2>
-                    <p class="text-muted">Discover the art of slow living at Villa ABBA. A minimalist masterpiece in the heart of paradise, our villa blends clean lines with natural Balinese textures. Offering a seamless indoor-outdoor living experience and a tranquil atmosphere, it is the perfect hideaway for the modern traveler looking to unplug and unwind in style.</p>
-                </div>
-                <div class="col-md-5 ps-md-5 text-center">
-                    <img src="/Media/logo1.png" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
-                    <p class="small text-muted">theabbavilla001@gmail.com<br>+62 361 201 1188<br>Nusa Dua - Bali, Indonesia</p>
-                </div>
-            </div>
-        </section>
-        <section class="room-suites-section" style="background-image: url('Media/imagesuites.jpg');">
-            <div class="room-overlay d-flex align-items-center justify-content-center text-center text-white">
-                <div class="container">
-                    <h2 class="serif-text display-4">Room & Suite</h2>
-                    <p class="px-3 mb-4">Menangkap semangat asli Indonesia, setiap kamar mencakup ruang tamu yang luas dan mewah.</p>
-                    <button class="btn btn-outline-light px-5 py-2" onclick="navigateTo('rooms')">LIHAT LEBIH LANJUT</button>
-                </div>
-            </div>
-        </section>
-        <section class="container py-5 mt-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5">
-                    <div class="package-img-wrapper" style="background-image: url('Media/slide1.jpg'); height: 450px; background-size: cover; background-position: center; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="serif-text">Paket & Penawaran</h2>
-                    <p>Direncanakan dengan cermat untuk memastikan pelarian yang tak terlupakan.</p>
-                    <ul class="list-unstyled package-list mt-4">
-                        <li>Luxury Vacation Packages</li>
-                        <li>Premium Holiday Deals</li>
-                        <li>Exclusive Gate</li>
-                        <li>Special Travel Offers</li>
-                    </ul>
-                    <button class="btn btn-link text-dark p-0 text-decoration-none">LIHAT SEMUA →</button>
-                </div>
-            </div>
-        </section>
-        <section class="container py-5 border-top">
-            <h2 class="serif-text text-center mb-5">Pengalaman Kami</h2>
-            <div class="row g-4 text-center">
-                <div class="col-md-6">
-                    <div class="bg-light d-flex align-items-center justify-content-center" style="height: 300px; border-radius: 4px;">
-                        [Gambar Fine Dining]
-                    </div>
-                    <h5 class="mt-3 serif-text">Makan Malam Eksklusif</h5>
-                </div>
-                <div class="col-md-6">
-                    <div class="bg-light d-flex align-items-center justify-content-center" style="height: 300px; border-radius: 4px;">
-                        [Gambar Spa & Wellness]
-                    </div>
-                    <h5 class="mt-3 serif-text">Relaksasi Spa</h5>
-                </div>
-            </div>
-            <p class="text-center mt-5 text-muted">Ikuti kami di Instagram <span class="fw-bold">@theabbavillabali</span></p>
-        </section>
-        </main>
-    <footer class="footer-bg py-5">
+
+    <main id="app-content" style="min-height: 100vh;">
+    </main>
+
+    <footer class="footer-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row small">
-                        <div class="col-6">
-                            <p class="mb-1" style="cursor:pointer" onclick="navigateTo('discover')">Tentang Kami</p>
-                            <p class="mb-1" style="cursor:pointer" onclick="navigateTo('contact')">Hubungi Kami</p>
-                        </div>
-                        <div class="col-6">
-                            <p class="mb-1">Jaminan Harga Terbaik</p>
-                            <p class="mb-1" style="cursor:pointer" onclick="navigateTo('book')">Ubah atau Batalkan Pesanan</p>
-                        </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="mb-4">VILLA ABBA</h4>
+                    <p class="mb-4" style="line-height: 1.8; opacity: 0.9;">
+                        Rasakan ketenangan dan kemewahan sejati di jantung pulau Dewata. 
+                        Tempat pelarian sempurna untuk menyegarkan jiwa dan raga Anda.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 text-md-end mt-4 mt-md-0">
-                    <p class="small">Daftar untuk penawaran, berita, dan inspirasi perjalanan</p>
-                    <input type="email" placeholder="contoh@gmail.com" class="footer-input">
+
+                <div class="col-lg-2 col-md-6">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" onclick="navigateTo('discover'); return false;">About Us</a></li>
+                        <li><a href="#" onclick="navigateTo('villas'); return false;">Our Collections</a></li>
+                        <li><a href="#" onclick="navigateTo('facility'); return false;">Facilities</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" onclick="navigateTo('check-booking'); return false;">Check Booking</a></li>
+                        <li><a href="#" onclick="navigateTo('contact'); return false;">Contact Us</a></li>
+                        <li><a href="#" onclick="navigateTo('reviews'); return false;">Guest Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Jl. Raya Nusa Dua Selatan No. 88,<br>Bali, Indonesia 80363</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+62 361 201 1188</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>reservation@abbavilla.com</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <hr>
-            <p class="small">© 2025 ABBA Villa | Legal | Kebijakan Privasi</p>
+
+            <div class="footer-bottom">
+                <p class="mb-0">© 2025 Villa ABBA Luxury Retreat. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="routes/router.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
