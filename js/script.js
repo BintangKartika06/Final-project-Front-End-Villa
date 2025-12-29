@@ -237,6 +237,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
+    function initCheckBooking() {
+        const checkForm = document.getElementById('checkBookingForm');
+        if (!checkForm) return;
+
+        checkForm.onsubmit = function(e) {
+            e.preventDefault();
+            const codeInput = document.getElementById('bookingCodeInput').value.trim().toUpperCase();
+            const allBookings = JSON.parse(localStorage.getItem('abbaBookings')) || [];
+            const found = allBookings.find(b => b.code === codeInput);
+
+            const resultDiv = document.getElementById('bookingResult');
+            const errorDiv = document.getElementById('bookingError');
+
+            if (found) {
+                resultDiv.classList.remove('d-none');
+                errorDiv.classList.add('d-none');
+                updateElement('resultName', 'textContent', found.customer);
+                updateElement('resultVilla', 'textContent', found.villa);
+                updateElement('resultStatus', 'textContent', found.status);
+                updateElement('resultTotal', 'textContent', found.total);
+            } else {
+                resultDiv.classList.add('d-none');
+                errorDiv.classList.remove('d-none');
+            }
+        };
+    }
+
     if (window.navigateTo) window.navigateTo('home');
 
 });
