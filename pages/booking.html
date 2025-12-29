@@ -1,0 +1,91 @@
+<header class="hero-section" style="height: 40vh; background-image: url('Media/image.jpg');">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <h1 class="serif-text text-white display-4">Secure Booking</h1>
+    </div>
+</header>
+
+<section class="container py-5">
+    <div id="booking-success" class="text-center py-5 d-none fade-in">
+        <i class="bi bi-check-circle-fill text-success display-1"></i>
+        <h2 class="serif-text mt-4">Booking Berhasil!</h2>
+        <p class="lead text-muted">Terima kasih telah memilih ABBA Villa.</p>
+        
+        <div class="card bg-light border-0 p-4 mx-auto mt-4" style="max-width: 500px;">
+            <p class="mb-1">Kode Booking Anda:</p>
+            <h1 class="display-4 fw-bold text-dark mb-3" id="success-code">ABBA-XXXX</h1>
+            <p class="small text-muted">Simpan kode ini untuk melakukan Check-In atau cek status pesanan.</p>
+        </div>
+        
+        <button class="btn btn-book-now mt-5 px-5" onclick="navigateTo('home')">KEMBALI KE BERANDA</button>
+    </div>
+
+    <div id="booking-container" class="row g-5">
+        <div class="col-lg-7">
+            <h3 class="serif-text mb-4">Informasi Tamu</h3>
+            <form id="bookingForm">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label text-muted small text-uppercase">Nama Depan</label>
+                        <input type="text" class="form-control p-3" id="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted small text-uppercase">Nama Belakang</label>
+                        <input type="text" class="form-control p-3" id="lastName" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label text-muted small text-uppercase">Email</label>
+                        <input type="email" class="form-control p-3" id="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted small text-uppercase">Check-In</label>
+                        <input type="date" class="form-control p-3" id="checkIn" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label text-muted small text-uppercase">Check-Out</label>
+                        <input type="date" class="form-control p-3" id="checkOut" required>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label text-muted small text-uppercase">Permintaan Khusus (Opsional)</label>
+                        <textarea class="form-control p-3" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-book-now w-100 py-3 fw-bold">KONFIRMASI BOOKING</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card border-0 shadow-sm p-4 sticky-top" style="top: 100px;">
+                <h4 class="serif-text mb-4">Ringkasan Pesanan</h4>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <img id="summary-img" src="" class="rounded" style="width: 80px; height: 80px; object-fit: cover; margin-right: 15px;">
+                    <div>
+                        <h6 class="mb-1" id="summary-title">Pilih Villa Dahulu</h6>
+                        <small class="text-muted" id="summary-category">Category</small>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="text-muted">Harga Paket</span>
+                    <span class="fw-bold" id="summary-price">-</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="text-muted">Pajak & Layanan (10%)</span>
+                    <span class="fw-bold" id="summary-tax">-</span>
+                </div>
+                
+                <hr>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="serif-text mb-0">Total</h5>
+                    <h4 class="serif-text text-gold mb-0" id="summary-total" style="color: #CCA075;">-</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
