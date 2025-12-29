@@ -157,6 +157,85 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    async function renderBooking(villaId) {
+        if (!villaId) {
+            alert("Silakan pilih villa terlebih dahulu.");
+            navigateTo('home');
+            return;
+        }
+
+        const villas = await getVillas();
+        const villa = villas.find(v => v.id === villaId);
+
+        if (villa) {
+            document.getElementById('summary-img').src = villa.image;
+            updateElement('summary-title', 'textContent', villa.title);
+            updateElement('summary-category', 'textContent', villa.category);
+            
+            const rawPrice = parseFloat(villa.price.replace(/[^0-9.-]+/g,"")); 
+            const tax = rawPrice * 0.1;
+            const total = rawPrice + tax;
+            const formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+
+            updateElement('summary-price', 'textContent', formatter.format(rawPrice));
+            updateElement('summary-tax', 'textContent', formatter.format(tax));
+            updateElement('summary-total', 'textContent', formatter.format(total));
+
+            const form = document.getElementById('bookingForm');
+            if(form) {
+                form.onsubmit = function(e) {
+                    e.preventDefault();
+                    processBooking(villa, total, formatter);
+                };
+            }
+        }
+    }
+
+    function processBooking(villa, total, formatter) {
+        const firstName = document.getElementById('firstName').value;
+        const email = document.getElementById('email').value;
+        const uniqueCode = 'ABBA-' + Math.random().toString(36).substr(2, 5).toUpperCase();
+
+        const bookingData = {
+            code: uniqueCode,
+            villa: villa.title,
+            customer: firstName,
+            email: email,
+            total: formatter.format(total),
+            status: 'Confirmed'
+        };
+
+        let allBookings = JSON.parse(localStorage.getItem('abbaBookings')) || [];
+        allBookings.push(bookingData);
+        localStorage.setItem('abbaBookings', JSON.stringify(allBookings));
+
+        document.getElementById('booking-container').classList.add('d-none');
+        document.getElementById('booking-success').classList.remove('d-none');
+        document.getElementById('success-code').textContent = uniqueCode;
+        window.scrollTo(0,0);
+    }
+
+    window.copyBookingCode = function(btnElement) {
+        const codeText = document.getElementById('success-code').innerText;
+
+        navigator.clipboard.writeText(codeText).then(() => {
+        const originalContent = btnElement.innerHTML;
+        
+        btnElement.classList.remove('btn-outline-secondary');
+        btnElement.classList.add('btn-success');
+        btnElement.innerHTML = '<i class="bi bi-check-lg fs-5"></i>';
+
+        setTimeout(() => {
+            btnElement.classList.remove('btn-success');
+            btnElement.classList.add('btn-outline-secondary');
+            btnElement.innerHTML = '<i class="bi bi-files fs-5"></i>';
+        }, 2000);
+
+        }).catch(err => {
+            console.error('Gagal menyalin:', err);
+            alert('Gagal menyalin kode. Silakan salin secara manual.');
+        });
+    };
 
     if (window.navigateTo) window.navigateTo('home');
 
