@@ -17,7 +17,20 @@ window.navigateTo = async function(pageName, paramData = null) {
     const fileUrl = routes[pageName];
     const mainContent = document.getElementById('app-content');
 
-    if (!fileUrl) return;
+    if (!fileUrl) {
+        if (pageName === 'rooms') pageName = 'villas'; 
+        else return;
+    }
+
+    if (paramData !== null && paramData !== undefined) {
+        sessionStorage.setItem('params_' + pageName, JSON.stringify(paramData));
+    }
+
+    if (pageName === 'home') {
+        history.replaceState(null, null, ' '); 
+    } else {
+        window.location.hash = pageName;
+    }
 
     const collapse = document.querySelector('.navbar-collapse');
     if (collapse) collapse.classList.remove('show');
@@ -26,7 +39,7 @@ window.navigateTo = async function(pageName, paramData = null) {
     if(mainContent) mainContent.classList.add('fade-out');
 
     try {
-        const response = await fetch(fileUrl);
+        const response = await fetch(routes[pageName] || routes['villas']); 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         
         const html = await response.text();
@@ -39,28 +52,28 @@ window.navigateTo = async function(pageName, paramData = null) {
             
             window.scrollTo(0, 0);
 
-            if (!window.isPopState) {
-                const url = pageName === 'home' ? '/' : `/${pageName}`;
-                window.history.pushState({ page: pageName, data: paramData }, '', url);
-            }
-            window.isPopState = false;
-
             document.dispatchEvent(new CustomEvent('router:loaded', { 
                 detail: { page: pageName, data: paramData } 
             }));
 
-        }, 300); 
+        }, 300);
 
     } catch (error) {
-        console.error("Router Error:", error);
-        if(mainContent) mainContent.innerHTML = "<div class='text-center py-5'><h3>404 - Halaman Tidak Ditemukan</h3></div>";
+        console.error(error);
+        if(mainContent) mainContent.innerHTML = "<div class='text-center py-5'><h3>Halaman Sedang Perbaikan</h3></div>";
     }
 };
 
-window.addEventListener('popstate', (e) => {
-    window.isPopState = true;
-    const state = e.state || {};
-    navigateTo(state.page || 'home', state.data || null);
+window.addEventListener('popstate', () => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        let savedData = sessionStorage.getItem('params_' + hash);
+        if (savedData) savedData = JSON.parse(savedData);
+        
+        navigateTo(hash, savedData);
+    } else {
+        navigateTo('home');
+    }
 });
 
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
