@@ -128,25 +128,27 @@ a {
 
 .navbar-collapse {
     position: fixed;
-    top: 90px; 
+    top: 90px;
     left: 0;
     width: 100%;
     background: white;
-    padding: 40px 0;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border-top: 1px solid rgba(0,0,0,0.05);
-    
     max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out, visibility 0.4s;
-    visibility: hidden;
-    display: block !important; 
+    transition: all 0.4s ease-in-out; 
+    display: block !important;
 }
 
 .navbar-collapse.show {
     max-height: 500px;
-    visibility: visible;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 1;
 }
 
 .nav-link {

@@ -6,11 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (toggler) {
         toggler.addEventListener('click', function() {
             this.classList.toggle('open');
+            const collapse = document.querySelector('.navbar-collapse');
             const isMenuOpen = this.classList.contains('open');
 
             if (isMenuOpen) {
                 navbar.classList.add('menu-open');
+                if(collapse) collapse.classList.add('show');
             } else {
+                if(collapse) collapse.classList.remove('show');
+                
                 if (window.scrollY < 50) {
                     navbar.classList.remove('menu-open');
                     navbar.classList.remove('scrolled');
