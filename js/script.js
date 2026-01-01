@@ -1,23 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('mainNav');
     const toggler = document.querySelector('.navbar-toggler');
-    let cachedVillas = null;
+    const collapseMenu = document.getElementById('navbarNav');
 
     if (toggler) {
         toggler.addEventListener('click', function() {
-            this.classList.toggle('open');
-            const isMenuOpen = this.classList.contains('open');
-
-            if (isMenuOpen) {
+            const isOpen = this.classList.toggle('open');
+            
+            if (isOpen) {
+                collapseMenu.classList.add('show');
                 navbar.classList.add('menu-open');
             } else {
-                if (window.scrollY < 50) {
-                    navbar.classList.remove('menu-open');
-                    navbar.classList.remove('scrolled');
-                }
+                collapseMenu.classList.remove('show');
+                setTimeout(() => {
+                    if (window.scrollY < 50) {
+                        navbar.classList.remove('menu-open');
+                    }
+                }, 600);
             }
         });
     }
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (toggler.classList.contains('open')) {
+                toggler.click();
+            }
+        });
+    });
 
     window.addEventListener('scroll', () => {
         if (toggler && toggler.classList.contains('open')) return;
