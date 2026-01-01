@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isOpen) {
                 collapseMenu.classList.add('show');
                 navbar.classList.add('menu-open');
+                if(collapse) collapse.classList.add('show');
             } else {
                 collapseMenu.classList.remove('show');
                 setTimeout(() => {
