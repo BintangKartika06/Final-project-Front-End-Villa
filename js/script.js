@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('mainNav');
     const toggler = document.querySelector('.navbar-toggler');
     const collapseMenu = document.getElementById('navbarNav');
+    let cachedVillas = null;
 
     if (toggler) {
         toggler.addEventListener('click', function() {
