@@ -141,7 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo(0,0);
     }
 
-    // Tambahkan ini ke dalam script.js (bisa diletakkan di bagian bawah file)
 
 window.copyBookingCode = function(btnElement) {
     const codeElement = document.getElementById('success-code');
