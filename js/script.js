@@ -6,19 +6,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (toggler) {
         toggler.addEventListener('click', function() {
-            const isOpen = this.classList.toggle('open');
-            
-            if (isOpen) {
+            const willOpen = this.classList.toggle('open');
+            if (willOpen) {
                 collapseMenu.classList.add('show');
                 navbar.classList.add('menu-open');
-                if(collapse) collapse.classList.add('show');
             } else {
                 collapseMenu.classList.remove('show');
-                setTimeout(() => {
-                    if (window.scrollY < 50) {
-                        navbar.classList.remove('menu-open');
-                    }
-                }, 600);
+                navbar.classList.remove('menu-open'); 
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             }
         });
     }
@@ -141,6 +140,31 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('success-code').textContent = uniqueCode;
         window.scrollTo(0,0);
     }
+
+    // Tambahkan ini ke dalam script.js (bisa diletakkan di bagian bawah file)
+
+window.copyBookingCode = function(btnElement) {
+    const codeElement = document.getElementById('success-code');
+    
+    if (!codeElement) return; 
+    const codeText = codeElement.textContent.trim();
+    navigator.clipboard.writeText(codeText).then(() => {
+        const originalContent = btnElement.innerHTML;
+
+        btnElement.innerHTML = '<i class="bi bi-check-lg fs-5"></i>';
+        btnElement.classList.remove('btn-outline-secondary');
+        btnElement.classList.add('btn-success');
+        setTimeout(() => {
+            btnElement.innerHTML = '<i class="bi bi-files fs-5"></i>'; 
+            btnElement.classList.remove('btn-success');
+            btnElement.classList.add('btn-outline-secondary');
+        }, 2000);
+
+    }).catch(err => {
+        console.error('Gagal menyalin: ', err);
+        alert('Gagal menyalin otomatis. Kode: ' + codeText);
+    });
+};
 
     async function renderCategoryPage(categoryName) {
         const container = document.getElementById('category-list-container');
