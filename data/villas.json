@@ -5,7 +5,7 @@
     "title": "The Grand Estate",
     "duration": "5 Days / 4 Nights",
     "price": "$2,500",
-    "image": "Media/",
+    "image": "Media/luxury-1.jpg",
     "icon": "bi-stars",
     "description": "Hunian termewah dengan arsitektur megah, kolam renang olympic-size pribadi, dan layanan pelayan 24 jam.",
     "features": ["Olympic Pool", "Private Cinema", "Helipad Access"]
@@ -16,7 +16,7 @@
     "title": "Ocean Pearl Villa",
     "duration": "5 Days / 4 Nights",
     "price": "$2,200",
-    "image": "Media/",
+    "image": "Media/luxury-2.jpg",
     "icon": "bi-stars",
     "description": "Permata di tepi laut dengan akses pantai privat dan pemandangan matahari terbenam yang tak tertandingi.",
     "features": ["Beachfront", "Jacuzzi", "In-Villa Chef"]
@@ -27,7 +27,7 @@
     "title": "Villa Serenity",
     "duration": "5 Days / 4 Nights",
     "price": "$1,750",
-    "image": "Media/",
+    "image": "Media/luxury-3.jpg",
     "icon": "bi-stars",
     "description": "Ketenangan mutlak dengan desain Zen modern, dikelilingi oleh taman air yang menenangkan.",
     "features": ["Zen Garden", "Spa Room", "Yoga Pavilion"]
