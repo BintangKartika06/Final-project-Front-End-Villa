@@ -79,7 +79,7 @@ Copy Code Tool: Tombol khusus untuk menyalin kode booking yang telah dihasilkan 
 
 
 ## Struktur Folder
-```yaml
+```diff
 .
 └── PROJECT AKHIR FRONTEND VILLA/
     ├── css/
