@@ -78,7 +78,36 @@ Copy Code Tool: Tombol khusus untuk menyalin kode booking yang telah dihasilkan 
 
 
 
-##
+## Struktur Folder
+```yaml
+.
+└── PROJECT AKHIR FRONTEND VILLA/
+    ├── css/
+    │   └── style.css
+    ├── data/
+    │   └── villas.json
+    ├── js/
+    │   └── script.js
+    ├── lib
+    ├── Media/
+    │   └── #Seluruh Gambar yang terdapat pada website
+    ├── pages/
+    │   ├── booking.html
+    │   ├── category.html
+    │   ├── check-booking.html
+    │   ├── contact.html
+    │   ├── detail.html
+    │   ├── discover.html
+    │   ├── facility.html
+    │   ├── gallery.html
+    │   ├── home.html
+    │   ├── reviews.html
+    │   └── villas.html
+    ├── routes/
+    │   └── router.js
+    ├── index.html
+    └── README.md
+```
 
 
 
