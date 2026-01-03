@@ -5,7 +5,7 @@
     "title": "The Grand Estate",
     "duration": "5 Days / 4 Nights",
     "price": "$2,500",
-    "image": "Media/luxury-1.jpg",
+    "image": "Media/Luxury/luxury-1.jpg",
     "icon": "bi-stars",
     "description": "Hunian termewah dengan arsitektur megah, kolam renang olympic-size pribadi, dan layanan pelayan 24 jam.",
     "features": ["Olympic Pool", "Private Cinema", "Helipad Access"]
@@ -16,7 +16,7 @@
     "title": "Ocean Pearl Villa",
     "duration": "5 Days / 4 Nights",
     "price": "$2,200",
-    "image": "Media/luxury-2.jpg",
+    "image": "Media/Luxury/luxury-2.jpg",
     "icon": "bi-stars",
     "description": "Permata di tepi laut dengan akses pantai privat dan pemandangan matahari terbenam yang tak tertandingi.",
     "features": ["Beachfront", "Jacuzzi", "In-Villa Chef"]
@@ -27,7 +27,7 @@
     "title": "Villa Serenity",
     "duration": "5 Days / 4 Nights",
     "price": "$1,750",
-    "image": "Media/luxury-3.jpg",
+    "image": "Media/Luxury/luxury-3.jpg",
     "icon": "bi-stars",
     "description": "Ketenangan mutlak dengan desain Zen modern, dikelilingi oleh taman air yang menenangkan.",
     "features": ["Zen Garden", "Spa Room", "Yoga Pavilion"]
@@ -39,7 +39,7 @@
     "title": "Modern Paradise",
     "duration": "4 Days / 3 Nights",
     "price": "$1,350",
-    "image": "Media/premium-1.jpg",
+    "image": "Media/Premium/premium-1.jpg",
     "icon": "bi-award",
     "description": "Surga modern dengan teknologi smart-home terkini dan interior bergaya kontemporer.",
     "features": ["Smart Home", "Infinity Pool", "Rooftop Bar"]
@@ -50,7 +50,7 @@
     "title": "Beachfront Luxury",
     "duration": "4 Days / 3 Nights",
     "price": "$1,280",
-    "image": "Media/premium-2.jpg",
+    "image": "Media/Premium/premium-2.jpg",
     "icon": "bi-award",
     "description": "Langkah langsung ke pasir putih dari teras kamar Anda. Pengalaman tropis yang sempurna.",
     "features": ["Direct Beach Access", "Sun Deck", "Floating Breakfast"]
@@ -61,7 +61,7 @@
     "title": "Contemporary Retreat",
     "duration": "4 Days / 3 Nights",
     "price": "$1,220",
-    "image": "Media/premium-3.jpg",
+    "image": "Media/Premium/premium-3.jpg",
     "icon": "bi-award",
     "description": "Tempat peristirahatan dengan desain artistik dan ruang tamu terbuka yang luas.",
     "features": ["Artistic Design", "Open Living", "Bathtub with View"]
@@ -72,7 +72,7 @@
     "title": "Sunset Paradise",
     "duration": "4 Days / 3 Nights",
     "price": "$1,180",
-    "image": "Media/premium-4.jpg",
+    "image": "Media/Premium/premium-4.jpg",
     "icon": "bi-award",
     "description": "Posisi terbaik untuk menikmati golden hour setiap hari dari balkon pribadi Anda.",
     "features": ["Sunset View", "King Bed", "Minibar"]
@@ -83,7 +83,7 @@
     "title": "The Sunset Retreat",
     "duration": "4 Days / 3 Nights",
     "price": "$1,150",
-    "image": "Media/premium-5.jpg",
+    "image": "Media/Premium/premium-5.jpg",
     "icon": "bi-award",
     "description": "Retreat eksklusif di atas tebing dengan panorama laut lepas.",
     "features": ["Cliff View", "Private Terrace", "Premium Sound System"]
@@ -95,7 +95,7 @@
     "title": "Tropical Hideaway",
     "duration": "7 Days / 6 Nights",
     "price": "$920",
-    "image": "Media/exclusive-1.jpg",
+    "image": "Media/Exclusive/exclusive-1.jpg",
     "icon": "bi-person-check",
     "description": "Persembunyian tropis yang rimbun, dikelilingi pepohonan kelapa dan suara alam.",
     "features": ["Jungle Vibe", "Hammock", "Outdoor Shower"]
@@ -106,7 +106,7 @@
     "title": "Cliffside Sanctuary",
     "duration": "7 Days / 6 Nights",
     "price": "$890",
-    "image": "Media/exclusive-2.jpg",
+    "image": "Media/Exclusive/exclusive-2.jpg",
     "icon": "bi-person-check",
     "description": "Sanctuary pribadi di sisi tebing, menawarkan privasi total dan udara segar.",
     "features": ["Privacy", "Plunge Pool", "Meditation Spot"]
@@ -117,7 +117,7 @@
     "title": "Rice Terrace Villa",
     "duration": "7 Days / 6 Nights",
     "price": "$880",
-    "image": "Media/exclusive-3.jpg",
+    "image": "Media/Exclusive/exclusive-3.jpg",
     "icon": "bi-person-check",
     "description": "Pemandangan sawah berundak yang ikonik langsung dari jendela kamar tidur.",
     "features": ["Ricefield View", "Bike Rental", "Organic Breakfast"]
@@ -128,7 +128,7 @@
     "title": "Poolside Escape",
     "duration": "7 Days / 6 Nights",
     "price": "$870",
-    "image": "Media/exclusive-4.jpeg",
+    "image": "Media/Exclusive/exclusive-4.jpeg",
     "icon": "bi-person-check",
     "description": "Akses langsung terjun ke kolam renang utama dari pintu kamar Anda.",
     "features": ["Pool Access", "Sun Lounger", "Cabana"]
@@ -139,7 +139,7 @@
     "title": "Minimalist Haven",
     "duration": "7 Days / 6 Nights",
     "price": "$860",
-    "image": "Media/exclusive-5.jpg",
+    "image": "Media/Exclusive/exclusive-5.jpg",
     "icon": "bi-person-check",
     "description": "Kecantikan dalam kesederhanaan. Desain minimalis yang menenangkan pikiran.",
     "features": ["Minimalist Decor", "Work Desk", "High Speed WiFi"]
@@ -150,7 +150,7 @@
     "title": "Villa Azure",
     "duration": "7 Days / 6 Nights",
     "price": "$850",
-    "image": "Media/exclusive-6.jpg",
+    "image": "Media/Exclusive/exclusive-6.jpg",
     "icon": "bi-person-check",
     "description": "Nuansa biru laut dan langit yang menyatu dalam desain interior villa.",
     "features": ["Blue Theme", "Ocean Breeze", "Spacious"]
@@ -161,7 +161,7 @@
     "title": "Tropical Haven",
     "duration": "7 Days / 6 Nights",
     "price": "$850",
-    "image": "Media/exclusive-7.jpg",
+    "image": "Media/Exclusive/exclusive-7.jpg",
     "icon": "bi-person-check",
     "description": "Surga tropis dengan taman bunga eksotis di halaman pribadi.",
     "features": ["Exotic Garden", "Gazebo", "Tea Set"]
@@ -173,7 +173,7 @@
     "title": "Garden Oasis",
     "duration": "3 Days / 2 Nights",
     "price": "$520",
-    "image": "Media/special-1.jpg",
+    "image": "Media/Special/special-1.jpg",
     "icon": "bi-calendar-event",
     "description": "Oasis hijau di tengah keramaian, penawaran spesial minggu ini.",
     "features": ["Lush Garden", "Quiet Area", "Shared Pool"]
@@ -184,7 +184,7 @@
     "title": "Surfer's Den",
     "duration": "3 Days / 2 Nights",
     "price": "$490",
-    "image": "Media/special-2.jpg",
+    "image": "Media/Special/special-2.jpg",
     "icon": "bi-calendar-event",
     "description": "Favorit para peselancar, dekat dengan spot ombak terbaik.",
     "features": ["Surf Rack", "Near Beach", "Chill Vibe"]
@@ -195,7 +195,7 @@
     "title": "Cozy Corner",
     "duration": "3 Days / 2 Nights",
     "price": "$480",
-    "image": "Media/special-3.jpg",
+    "image": "Media/Special/special-3.jpg",
     "icon": "bi-calendar-event",
     "description": "Sudut nyaman yang sempurna untuk pelarian singkat.",
     "features": ["Cozy Bed", "Netflix", "Coffee Maker"]
@@ -206,7 +206,7 @@
     "title": "Island Getaway",
     "duration": "3 Days / 2 Nights",
     "price": "$480",
-    "image": "Media/special-4.jpg",
+    "image": "Media/Special/special-4.jpg",
     "icon": "bi-calendar-event",
     "description": "Rasakan atmosfer pulau dengan harga yang sangat terjangkau.",
     "features": ["Island Decor", "Bike Included", "Map"]
@@ -217,7 +217,7 @@
     "title": "Sunset View Cottage",
     "duration": "3 Days / 2 Nights",
     "price": "$450",
-    "image": "Media/special-5.jpg",
+    "image": "Media/Special/special-5.jpg",
     "icon": "bi-calendar-event",
     "description": "Pondok kayu estetik dengan pemandangan langit sore.",
     "features": ["Wooden Cottage", "Balcony", "Fan Cooled"]
@@ -228,7 +228,7 @@
     "title": "Budget Modern Villa",
     "duration": "3 Days / 2 Nights",
     "price": "$440",
-    "image": "Media/special-6.jpg",
+    "image": "Media/Special/special-6.jpg",
     "icon": "bi-calendar-event",
     "description": "Gaya modern tanpa menguras kantong.",
     "features": ["Clean Design", "Smart TV", "Shower"]
@@ -239,7 +239,7 @@
     "title": "Tropical Budget Stay",
     "duration": "3 Days / 2 Nights",
     "price": "$430",
-    "image": "Media/special-7.jpg",
+    "image": "Media/Special/special-7.jpg",
     "icon": "bi-calendar-event",
     "description": "Pilihan ekonomis untuk backpacker yang menginginkan kenyamanan.",
     "features": ["Budget Friendly", "Communal Kitchen", "Locker"]
@@ -250,7 +250,7 @@
     "title": "Beachside Bliss",
     "duration": "3 Days / 2 Nights",
     "price": "$420",
-    "image": "Media/special-8.jpg",
+    "image": "Media/Special/special-8.jpg",
     "icon": "bi-calendar-event",
     "description": "Kebahagiaan sederhana hanya beberapa langkah dari pantai.",
     "features": ["Walking Distance to Beach", "Simple", "Clean"]
@@ -261,7 +261,7 @@
     "title": "Beach Bungalow",
     "duration": "3 Days / 2 Nights",
     "price": "$380",
-    "image": "Media/special-9.jpg",
+    "image": "Media/Special/special-9.jpg",
     "icon": "bi-calendar-event",
     "description": "Bungalow tradisional yang otentik dan nyaman.",
     "features": ["Traditional Style", "Mosquito Net", "Terrace"]
@@ -272,7 +272,7 @@
     "title": "Coastal Cabin",
     "duration": "3 Days / 2 Nights",
     "price": "$350",
-    "image": "Media/special-10.jpg",
+    "image": "Media/Special/special-10.jpg",
     "icon": "bi-calendar-event",
     "description": "Kabin pesisir yang mungil dan instagramable.",
     "features": ["Instagrammable", "Compact", "Best Deal"]
