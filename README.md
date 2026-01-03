@@ -4,11 +4,14 @@
 ABBA VILLA adalah sebuah platform web profil mewah yang dirancang untuk memberikan pengalaman reservasi villa secara eksklusif dan modern. Website ini mengusung tema "Luxury Retreat" dengan fokus pada estetika visual yang bersih, tipografi yang elegan, dan navigasi yang intuitif. Situs ini berfungsi sebagai gerai digital untuk menampilkan koleksi villa, fasilitas, serta sistem manajemen pemesanan sederhana.
 
 ## Daftar Anggota yang berkontribusi
-I Made Bintang Kartika Yasa (240040054)
+**I Made Bintang Kartika Yasa** **(240040054)**  
+(Membuat repository project, membuat tampilan bentuk awal dari website dan Styling pemilihan warna, typografi dan layouting letak letak content dari villanya.)
 
-I Made Agastya Wedastika (240040120)
+**I Made Agastya Wedastika** **(240040120)**  
+(Melakukan styling warna, mempercantik tampilan halaman website dan menambahkan gambar pada content di website dari gambar villa-villanya.)
 
-I Gst.N.Pt Diana Putra Pratama (240040118)
+**I Gst.N.Pt Diana Putra Pratama** **(240040118)**  
+(Membuat proses routing di website ini yang dimana bertugas hanya dibagian route untuk melakukan ketika user ini `onclick` dia akan mengarah kemana.)
 
 ## Teknologi Yang Digunakan
 #### Frontend & UI Frameworks
@@ -62,7 +65,7 @@ Halaman Detail Villa: Menampilkan informasi mendalam untuk setiap villa, termasu
 ###### 3. Sistem Pemesanan (Booking)
 Kalkulasi Harga Otomatis: Menghitung biaya pajak sebesar 10% dari harga dasar dan menjumlahkannya menjadi total biaya secara otomatis.
 
-Generator Kode Unik: Menghasilkan kode booking unik dengan format "ABBA-XXXXX" menggunakan kombinasi angka dan huruf acak setelah pemesanan berhasil.
+Generator Kode Unik: Menghasilkan kode booking unik dengan format `"ABBA-XXXXX"` menggunakan kombinasi angka dan huruf acak setelah pemesanan berhasil.
 
 Penyimpanan Data Lokal: Menyimpan detail pemesanan (nama, email, villa, total harga) ke dalam localStorage browser agar data tidak hilang.
 
