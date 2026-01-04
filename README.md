@@ -4,14 +4,14 @@
 ABBA VILLA adalah sebuah platform web profil mewah yang dirancang untuk memberikan pengalaman reservasi villa secara eksklusif dan modern. Website ini mengusung tema "Luxury Retreat" dengan fokus pada estetika visual yang bersih, tipografi yang elegan, dan navigasi yang intuitif. Situs ini berfungsi sebagai gerai digital untuk menampilkan koleksi villa, fasilitas, serta sistem manajemen pemesanan sederhana.
 
 ## Daftar Anggota yang berkontribusi
-**I Made Bintang Kartika Yasa** **(240040054)**  
-(Membuat repository project, membuat tampilan bentuk awal dari website dan Styling pemilihan warna, typografi dan layouting letak letak content dari villanya.)
+**I Made Bintang Kartika Yasa** **(240040054)** [Link Profile Github](https://github.com/BintangKartika06)  
+(Membuat repository project, membuat tampilan bentuk awal dari website dan Styling pemilihan warna, typografi dan layouting letak letak content dari villanya.)  
 
-**I Made Agastya Wedastika** **(240040120)**  
-(Melakukan styling warna, mempercantik tampilan halaman website dan menambahkan gambar pada content di website dari gambar villa-villanya.)
+**I Made Agastya Wedastika** **(240040120)** [Link Profile Github](https://github.com/errondotsol)  
+(Melakukan styling warna, mempercantik tampilan halaman website dan menambahkan gambar pada content di website dari gambar villa-villanya.)  
 
-**I Gst.N.Pt Diana Putra Pratama** **(240040118)**  
-(Membuat proses routing di website ini yang dimana bertugas hanya dibagian route untuk melakukan ketika user ini `onclick` dia akan mengarah kemana.)
+**I Gst.N.Pt Diana Putra Pratama** **(240040118)** [Link Profile Github](https://github.com/aristokragus)  
+(Membuat proses routing di website ini yang dimana bertugas hanya dibagian route untuk melakukan ketika user ini `onclick` dia akan mengarah kemana.)  
 
 ## Teknologi Yang Digunakan
 #### Frontend & UI Frameworks
