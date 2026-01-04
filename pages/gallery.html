@@ -13,40 +13,48 @@
     <div class="row g-3">
         <div class="col-md-8">
             <div class="overflow-hidden rounded" style="height: 400px;">
-                <img src="Media/Gallery/gallery-1.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-1.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-1.jpg')">
             </div>
         </div>
         <div class="col-md-4">
             <div class="overflow-hidden rounded" style="height: 400px;">
-                <img src="Media/Gallery/gallery-2.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-2.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-2.jpg')">
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="overflow-hidden rounded" style="height: 300px;">
-                <img src="Media/Gallery/gallery-3.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-3.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-3.jpg')">
             </div>
         </div>
         <div class="col-md-4">
             <div class="overflow-hidden rounded" style="height: 300px;">
-                <img src="Media/Gallery/gallery-4.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-4.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-4.jpg')">
             </div>
         </div>
         <div class="col-md-4">
             <div class="overflow-hidden rounded" style="height: 300px;">
-                <img src="Media/Gallery/gallery-5.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-5.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-5.jpg')">
             </div>
         </div>
-        
+
         <div class="col-md-6">
             <div class="overflow-hidden rounded" style="height: 350px;">
-                <img src="Media/Gallery/gallery-6.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-6.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-6.jpg')">
             </div>
         </div>
         <div class="col-md-6">
             <div class="overflow-hidden rounded" style="height: 350px;">
-                <img src="Media/Gallery/gallery-7.jpg" class="w-100 h-100 object-fit-cover hover-zoom" style="transition: transform 0.5s;">
+                <img src="Media/Gallery/gallery-7.jpg" class="w-100 h-100 object-fit-cover hover-zoom gallery-img" style="transition: transform 0.5s; cursor: pointer;" onclick="openGalleryModal('Media/Gallery/gallery-7.jpg')">
             </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal" onclick="closeGalleryModal()">
+        <div class="gallery-modal-content" onclick="event.stopPropagation()">
+            <button class="gallery-close-btn" onclick="closeGalleryModal()">&times;</button>
+            <img id="galleryModalImg" src="" alt="Gallery Image" class="gallery-modal-img">
         </div>
     </div>
 </section>

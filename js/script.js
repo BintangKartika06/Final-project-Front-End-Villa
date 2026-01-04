@@ -278,7 +278,7 @@ window.copyBookingCode = function(btnElement) {
     });
 
     if (window.navigateTo) {
-        const hash = window.location.hash.substring(1); 
+        const hash = window.location.hash.substring(1);
 
         if (hash) {
             let savedData = sessionStorage.getItem('params_' + hash);
@@ -293,3 +293,13 @@ window.copyBookingCode = function(btnElement) {
         }
     }
 });
+
+// Gallery Modal Functions
+function openGalleryModal(src) {
+    document.getElementById('galleryModalImg').src = src;
+    document.getElementById('galleryModal').style.display = 'flex';
+}
+
+function closeGalleryModal() {
+    document.getElementById('galleryModal').style.display = 'none';
+}
