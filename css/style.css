@@ -103,13 +103,13 @@ a {
     background-color: #CCA075;
     color: white;
     border: none;
-    padding: 12px 28px; 
+    padding: 12px 28px;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
 
@@ -420,38 +420,187 @@ a {
 }
 
 @media (max-width: 768px) {
-    
-    .hero-section .display-4 {
-        font-size: 2.5rem; 
+
+    /* Hero Section */
+    .hero-section {
+        height: 80vh;
+        min-height: 500px;
     }
 
+    .hero-section .display-1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-section .display-4 {
+        font-size: 2.5rem;
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .brand-logo {
+        height: 60px;
+    }
+
+    .btn-book-now {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+        min-height: 44px; /* Touch-friendly */
+    }
+
+    .navbar-collapse {
+        height: 100vh;
+        padding-top: 100px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem !important;
+        letter-spacing: 2px;
+        padding: 15px 0;
+        min-height: 44px; /* Touch-friendly */
+    }
+
+    /* Cards and Layout */
+    .package-card {
+        min-height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .package-overlay {
+        padding: 1.5rem;
+    }
+
+    .card {
+        border-radius: 8px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Buttons */
+    .btn {
+        min-height: 44px; /* Touch-friendly */
+        font-size: 0.9rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn:hover {
+        transform: translateY(-1px);
+    }
+
+    /* Forms */
+    .form-control {
+        min-height: 44px; /* Touch-friendly */
+        font-size: 1rem;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #CCA075;
+        box-shadow: 0 0 0 0.2rem rgba(204, 160, 117, 0.25);
+        transform: scale(1.01);
+    }
+
+    /* Footer */
+    .footer-bg {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .footer-bg h4 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .footer-bg ul li {
+        margin-bottom: 10px;
+    }
+
+    .contact-list li {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .social-icons a {
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+    }
+
+    /* Sections */
+    .container.py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .inquiry-banner {
+        padding: 2rem 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .inquiry-banner h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Booking */
     .btn-copy-code {
-        margin-left: auto !important;  
-        margin-right: auto !important; 
+        margin-left: auto !important;
+        margin-right: auto !important;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+        width: 48px;
+        height: 48px;
     }
 
     #booking-success .card {
-        padding: 1.5rem !important; 
+        padding: 1.5rem !important;
     }
-    
+
     #success-code {
-        font-size: 2.5rem;
+        font-size: 2rem;
         word-break: break-all;
     }
 
     .sticky-top {
         position: relative !important;
         top: 0 !important;
-        margin-top: 2rem; 
+        margin-top: 2rem;
         z-index: 1;
     }
 
-    .container.py-5 {
-        padding-top: 2rem !important;
-        padding-bottom: 3rem !important;
+    /* Images and Media */
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Text adjustments */
+    .serif-text {
+        font-size: 1.1em;
+    }
+
+    /* Spacing */
+    .row.g-4 {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Touch interactions */
+    * {
+        -webkit-tap-highlight-color: rgba(204, 160, 117, 0.1);
     }
 }
