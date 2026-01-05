@@ -80,6 +80,52 @@ Hover Zoom: Kartu villa memiliki efek perbesaran gambar yang halus saat kursor d
 Copy Code Tool: Tombol khusus untuk menyalin kode booking yang telah dihasilkan setelah proses pemesanan selesai.
 
 
+# (User Flow) untuk website ABBA VILLA
+### 1. Alur Kerja Sistem (System Workflow)
+Website ini bekerja dengan konsep Single Page Application (SPA) sederhana.
+
+Initial Load: Saat pertama kali dibuka, `index.html` memuat kerangka dasar (navbar & footer).
+
+Routing: JavaScript (`router.js`) mendengarkan perubahan navigasi dan menyuntikkan konten ke dalam elemen 
+```
+<main id="app-content">  
+```
+tanpa memuat ulang browser.
+
+Data Handling: Informasi villa diambil secara asinkron dari file JSON menggunakan Fetch API.
+
+Data Persistence: Data reservasi disimpan secara lokal di browser menggunakan localStorage, sehingga informasi booking tetap ada meskipun halaman di-refresh.
+
+### 2. Kegunaan Tombol-Tombol Utama
+Tombol Navbar Toggler (Hamburger): Membuka dan menutup menu navigasi pada tampilan mobile dengan animasi garis yang berubah menjadi silang.
+
+Tombol `"BOOK NOW"` (Navbar): Berfungsi sebagai _Call to Action_ utama yang mengarahkan pengguna langsung ke daftar seluruh villa yang tersedia.
+
+Tombol `"LIHAT DETAIL"` (Card Villa): Mengarahkan pengguna ke halaman spesifik villa untuk melihat deskripsi lengkap, harga, dan fasilitas.
+
+Tombol `"Book Now"` (Halaman Detail): Membawa ID villa terpilih menuju formulir pemesanan (halaman book).
+
+Tombol Submit `"Confirm Booking"`: Memvalidasi input, menghitung total harga (harga + pajak 10%), menghasilkan kode unik, dan menyimpan data ke sistem.
+
+Tombol `"Copy Code"`: Memungkinkan pengguna menyalin kode booking unik (ABBA-XXXXX) ke clipboard setelah transaksi berhasil.
+
+### 3. Alur Pengguna (User Flow)
+Website ini dirancang dengan alur linear yang memudahkan konversi tamu:
+
+Discovery (Penemuan): Pengguna mendarat di Home, melihat ringkasan kemewahan villa, atau langsung mengklik menu Discover atau Villas.
+
+Selection (Pemilihan): Pengguna menjelajahi katalog villa di halaman Villas atau berdasarkan kategori. Mereka melihat foto dan harga, lalu mengklik Lihat Detail pada villa yang menarik.
+
+Information (Informasi): Di halaman detail, pengguna mempelajari fasilitas dan durasi menginap. Jika setuju, mereka mengklik tombol Book Now.
+
+Transaction (Transaksi): * Pengguna mengisi nama dan email pada formulir booking.
+
+Sistem menampilkan ringkasan biaya termasuk kalkulasi pajak otomatis.
+
+Pengguna menekan konfirmasi dan mendapatkan Kode Booking unik.
+
+Verification (Verifikasi): Di masa mendatang, pengguna kembali ke website, masuk ke menu Check Booking, memasukkan kode mereka, dan melihat status reservasi mereka kembali.
+
 
 ## Struktur Folder
 ```yaml
