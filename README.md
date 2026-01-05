@@ -5,7 +5,7 @@ ABBA VILLA adalah sebuah platform web profil mewah yang dirancang untuk memberik
 
 ## Daftar Anggota yang berkontribusi
 **I Made Bintang Kartika Yasa** **(240040054)** [Link Profile Github](https://github.com/BintangKartika06)  
-(Membuat repository project, membuat tampilan bentuk awal dari website dan Styling pemilihan warna, typografi dan layouting letak letak content dari villanya.)  
+(Membuat repository project, membuat tampilan bentuk awal dari website dan Styling pemilihan warna, typografi dan layouting letak letak content dari villanya, membuat gambaran UI & UX untuk prototype sementara.)  
 
 **I Made Agastya Wedastika** **(240040120)** [Link Profile Github](https://github.com/errondotsol)  
 (Melakukan styling warna, mempercantik tampilan halaman website dan menambahkan gambar pada content di website dari gambar villa-villanya.)  
