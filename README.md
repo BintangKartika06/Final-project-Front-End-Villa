@@ -159,5 +159,5 @@ Verification (Verifikasi): Di masa mendatang, pengguna kembali ke website, masuk
 ```
 
 
-
-[Github Pages]
+#### Link tautan GitHub Pages Website Villa ABBA  
+[Github Pages](https://bintangkartika06.github.io/Final-project-Front-End-Villa/)
